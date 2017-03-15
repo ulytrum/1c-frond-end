@@ -7,7 +7,7 @@ var context = canvas.getContext("2d")
 
 function krugokwatch() {
 
-    circle = new Path2D();
+    var circle = new Path2D();
     square = new Path2D();
 
     circle.arc(150, 150, 150, 0, 2 * Math.PI);
@@ -111,6 +111,8 @@ function palki() {
     }
 
 
+
+    
 function DrawWatch() {
     context.clearRect(0, 0, 300, 300);
     krugokwatch();
