@@ -7,22 +7,15 @@ var context = canvas.getContext("2d")
 
 function krugokwatch() {
 
-    var circle = new Path2D();
-    square = new Path2D();
+     var circle = new Path2D();
+     var square = new Path2D();
 
     circle.arc(150, 150, 150, 0, 2 * Math.PI);
     context.strokeStyle = "black";
     context.stroke(circle);
 
-
-
-
-    var R = 300 / 2,
-
-    d, angle, pX, pY, qX, qY;
+    var R = 300 / 2,d, angle, pX, pY, qX, qY;
     var d, angle, pX, pY, qX, qY;
-
-
     for (d = 0; d < 60; ++d) {
         angle = (d / 60) * (2 * Math.PI);
         pX = Math.cos(angle) * R;
@@ -45,8 +38,11 @@ function palki() {
     var minute = new Path2D();
     var hour = new Path2D();
     var second = new Path2D();
-    var date = new Date(),
+    var date = new Date();
 
+    var hours  = new Path2D();
+    var minutes = new Path2D();
+    var seconds = new Path2D();
 
     hours = date.getHours();
     minutes = date.getMinutes();
@@ -112,7 +108,7 @@ function palki() {
 
 
 
-    
+
 function DrawWatch() {
     context.clearRect(0, 0, 300, 300);
     krugokwatch();
